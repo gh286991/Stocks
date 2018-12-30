@@ -1,0 +1,76 @@
+@charset "UTF-8";
+html, body {
+  width: 100%;
+  /* height: 100%; */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  position: relative;
+  font-family: 微軟正黑體;
+  /* border: solid 2px blueviolet;  */
+}
+
+.items {
+  float: left;
+}
+
+.inputbox {
+  padding: 5px;
+  margin: 15px;
+  float: left;
+}
+
+.parameter {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.starges {
+  justify-content: center;
+  overflow: hidden;
+}
+
+.Total {
+  align-items: center;
+  width: 70%;
+}
+
+.back {
+  height: 120px;
+}
+
+.starges .inputbox {
+  width: 3%;
+  text-align: center;
+}
+
+.inputbox input {
+  width: 100%;
+  text-align: center;
+}
+
+.butt button {
+  height: 50px;
+  width: 100px;
+}
+
+/* .dates {
+  width: 200%;
+
+  border: solid 2px blueviolet;
+} */
+
+.back .Tperiod {
+  width: 30%;
+}
+
+.result {
+  height: 100px;
+}

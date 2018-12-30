@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Stocks</h1>
+    <h2>Welcome</h2>
+    <h1>Stock</h1>
+    <form class="form-signin" action="/add/api" method="POST">
+        <div class="inputbox"> 
+        <input type="number" id="A" name="A"/>
+        <h3>+</h3>
+        <input type="number" id="B" name="B"/>
+        </div>
+        <div class="result">
+        <h3 id="=">= </h3>
+        <h3 id="result", name = "result">{{ result }}</h3>
+        {% csrf_token %}
+        <button class="btn btn-lg btn-primary btn-block" type="submit">GO!</button>
+    </form>
+
+</body>
+</html>
