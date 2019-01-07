@@ -1,0 +1,503 @@
+nohup: ignoring input
+System check identified some issues:
+
+WARNINGS:
+?: (2_0.W001) Your URL pattern '^favicon\.ico$' has a route that contains '(?P<', begins with a '^', or ends with a '$'. This was likely an oversight when migrating to django.urls.path().
+
+System check identified 1 issue (0 silenced).
+[07/Jan/2019 14:39:02] "GET /stocks HTTP/1.1" 200 3133
+[07/Jan/2019 14:39:04] "GET /static/icon/growth.ico HTTP/1.1" 200 4148
+[07/Jan/2019 14:39:26] "POST /stocks/api HTTP/1.1" 200 1662
+[07/Jan/2019 14:41:25] "GET /stocks HTTP/1.1" 200 3133
+[07/Jan/2019 14:41:27] "GET /static/icon/growth.ico HTTP/1.1" 200 4148
+[07/Jan/2019 14:41:34] "POST /stocks/api HTTP/1.1" 200 1662
+[07/Jan/2019 14:42:32] "GET /stocks HTTP/1.1" 200 3133
+[07/Jan/2019 14:42:39] "GET /stocks HTTP/1.1" 200 3133
+[07/Jan/2019 14:42:39] "GET /static/icon/growth.ico HTTP/1.1" 200 4148
+[07/Jan/2019 14:43:11] "POST /stocks/api HTTP/1.1" 200 1662
+[07/Jan/2019 14:43:11] "POST /stocks/api HTTP/1.1" 200 1662
+[07/Jan/2019 14:43:11] "POST /stocks/api HTTP/1.1" 200 1662
+[07/Jan/2019 14:43:11] "POST /stocks/api HTTP/1.1" 200 1662
+[07/Jan/2019 14:43:11] "POST /stocks/api HTTP/1.1" 200 1662
+[07/Jan/2019 14:43:11] "POST /stocks/api HTTP/1.1" 200 1662
+[07/Jan/2019 14:43:25] "GET /stocks HTTP/1.1" 200 3133
+Performing system checks...
+
+
+You have 15 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+January 07, 2019 - 14:39:00
+Django version 2.1.4, using settings 'stock.settings'
+Starting development server at http://128.199.161.45:8000/
+Quit the server with CONTROL-C.
+values <class 'int'>
+2018-11-01 - 2018-11-29 報酬率: 0.00 % nstock 0
+2018-11-29 - 2018-12-27 報酬率: 0.60 % nstock 1
+每次換手最大報酬 : 0.60 ％
+每次換手最少報酬 : 0.00 ％
+每次換手最少報酬 : 0.00 ％
+[Index(['2546'], dtype='object', name='stock_id')]
+stock_id
+2546    True
+dtype: bool
+date
+2018-11-02    78.65
+2018-11-05    78.25
+2018-11-06    78.00
+2018-11-07    78.40
+2018-11-08    78.85
+2018-11-09    77.80
+2018-11-12    78.00
+2018-11-13    77.10
+2018-11-14    77.35
+2018-11-15    77.60
+2018-11-16    76.95
+2018-11-19    76.70
+2018-11-20    76.00
+2018-11-21    76.00
+2018-11-22    75.60
+2018-11-23    75.35
+2018-11-26    76.15
+2018-11-27    76.05
+2018-11-28    76.90
+2018-11-29    77.05
+2018-11-30    76.75
+2018-12-03    78.80
+2018-12-04    78.25
+2018-12-05    76.65
+2018-12-06    75.10
+2018-12-07    75.45
+2018-12-10    74.45
+Name: 0050, dtype: float64
+<class 'pandas.core.series.Series'>
+2018-11-02 00:00:00
+78.65
+['2546']
+values <class 'int'>
+2018-11-01 - 2018-11-29 報酬率: 0.00 % nstock 0
+2018-11-29 - 2018-12-27 報酬率: 0.60 % nstock 1
+每次換手最大報酬 : 0.60 ％
+每次換手最少報酬 : 0.00 ％
+每次換手最少報酬 : 0.00 ％
+[Index(['2546'], dtype='object', name='stock_id')]
+stock_id
+2546    True
+dtype: bool
+date
+2018-11-02    78.65
+2018-11-05    78.25
+2018-11-06    78.00
+2018-11-07    78.40
+2018-11-08    78.85
+2018-11-09    77.80
+2018-11-12    78.00
+2018-11-13    77.10
+2018-11-14    77.35
+2018-11-15    77.60
+2018-11-16    76.95
+2018-11-19    76.70
+2018-11-20    76.00
+2018-11-21    76.00
+2018-11-22    75.60
+2018-11-23    75.35
+2018-11-26    76.15
+2018-11-27    76.05
+2018-11-28    76.90
+2018-11-29    77.05
+2018-11-30    76.75
+2018-12-03    78.80
+2018-12-04    78.25
+2018-12-05    76.65
+2018-12-06    75.10
+2018-12-07    75.45
+2018-12-10    74.45
+Name: 0050, dtype: float64
+<class 'pandas.core.series.Series'>
+2018-11-02 00:00:00
+78.65
+['2546']
+values <class 'int'>
+values <class 'int'>
+values <class 'int'>
+values <class 'int'>
+values <class 'int'>
+values <class 'int'>
+values <class 'int'>
+2018-11-01 - 2018-11-29 報酬率: 0.00 % nstock 0
+2018-11-01 - 2018-11-29 報酬率: 0.00 % nstock 0
+2018-11-01 - 2018-11-29 報酬率: 0.00 % nstock 0
+2018-11-01 - 2018-11-29 報酬率: 0.00 % nstock 0
+2018-11-01 - 2018-11-29 報酬率: 0.00 % nstock 0
+2018-11-01 - 2018-11-29 報酬率: 0.00 % nstock 0
+2018-11-29 - 2018-12-27 報酬率: 0.60 % nstock 1
+2018-11-29 - 2018-12-27 報酬率: 0.60 % nstock 1
+2018-11-29 - 2018-12-27 報酬率: 0.60 % nstock 1
+2018-11-29 - 2018-12-27 報酬率: 0.60 % nstock 1
+2018-11-29 - 2018-12-27 報酬率: 0.60 % nstock 1
+2018-11-29 - 2018-12-27 報酬率: 0.60 % nstock 1
+每次換手最大報酬 : 0.60 ％
+每次換手最少報酬 : 0.00 ％
+每次換手最少報酬 : 0.00 ％
+每次換手最大報酬 : 0.60 ％
+每次換手最少報酬 : 0.00 ％
+每次換手最少報酬 : 0.00 ％
+每次換手最大報酬 : 0.60 ％
+每次換手最少報酬 : 0.00 ％
+每次換手最少報酬 : 0.00 ％
+每次換手最大報酬 : 0.60 ％
+每次換手最少報酬 : 0.00 ％
+每次換手最少報酬 : 0.00 ％
+每次換手最大報酬 : 0.60 ％
+每次換手最少報酬 : 0.00 ％
+每次換手最少報酬 : 0.00 ％
+每次換手最大報酬 : 0.60 ％
+每次換手最少報酬 : 0.00 ％
+每次換手最少報酬 : 0.00 ％
+[Index(['2546'], dtype='object', name='stock_id')]
+[Index(['2546'], dtype='object', name='stock_id')]
+[Index(['2546'], dtype='object', name='stock_id')]
+[Index(['2546'], dtype='object', name='stock_id')]
+stock_id
+2546    True
+dtype: bool
+stock_id
+2546    True
+dtype: bool
+[Index(['2546'], dtype='object', name='stock_id')]
+[Index(['2546'], dtype='object', name='stock_id')]
+stock_id
+2546    True
+dtype: bool
+date
+2018-11-02    78.65
+2018-11-05    78.25
+2018-11-06    78.00
+2018-11-07    78.40
+2018-11-08    78.85
+2018-11-09    77.80
+2018-11-12    78.00
+2018-11-13    77.10
+2018-11-14    77.35
+2018-11-15    77.60
+2018-11-16    76.95
+2018-11-19    76.70
+2018-11-20    76.00
+2018-11-21    76.00
+2018-11-22    75.60
+2018-11-23    75.35
+2018-11-26    76.15
+2018-11-27    76.05
+2018-11-28    76.90
+2018-11-29    77.05
+2018-11-30    76.75
+2018-12-03    78.80
+2018-12-04    78.25
+2018-12-05    76.65
+2018-12-06    75.10
+2018-12-07    75.45
+2018-12-10    74.45
+Name: 0050, dtype: float64
+<class 'pandas.core.series.Series'>
+2018-11-02 00:00:00
+78.65
+stock_id
+2546    True
+dtype: bool
+date
+2018-11-02    78.65
+2018-11-05    78.25
+2018-11-06    78.00
+2018-11-07    78.40
+2018-11-08    78.85
+2018-11-09    77.80
+2018-11-12    78.00
+2018-11-13    77.10
+2018-11-14    77.35
+2018-11-15    77.60
+2018-11-16    76.95
+2018-11-19    76.70
+2018-11-20    76.00
+2018-11-21    76.00
+2018-11-22    75.60
+2018-11-23    75.35
+2018-11-26    76.15
+2018-11-27    76.05
+2018-11-28    76.90
+2018-11-29    77.05
+2018-11-30    76.75
+2018-12-03    78.80
+2018-12-04    78.25
+2018-12-05    76.65
+2018-12-06    75.10
+2018-12-07    75.45
+2018-12-10    74.45
+Name: 0050, dtype: float64
+<class 'pandas.core.series.Series'>
+2018-11-02 00:00:00
+78.65
+date
+2018-11-02    78.65
+2018-11-05    78.25
+2018-11-06    78.00
+2018-11-07    78.40
+2018-11-08    78.85
+2018-11-09    77.80
+2018-11-12    78.00
+2018-11-13    77.10
+2018-11-14    77.35
+2018-11-15    77.60
+2018-11-16    76.95
+2018-11-19    76.70
+2018-11-20    76.00
+2018-11-21    76.00
+2018-11-22    75.60
+2018-11-23    75.35
+2018-11-26    76.15
+2018-11-27    76.05
+2018-11-28    76.90
+2018-11-29    77.05
+2018-11-30    76.75
+2018-12-03    78.80
+2018-12-04    78.25
+2018-12-05    76.65
+2018-12-06    75.10
+2018-12-07    75.45
+2018-12-10    74.45
+Name: 0050, dtype: float64
+<class 'pandas.core.series.Series'>
+2018-11-02 00:00:00
+78.65
+['2546']
+stock_id
+2546    True
+dtype: bool
+date
+2018-11-02    78.65
+2018-11-05    78.25
+2018-11-06    78.00
+2018-11-07    78.40
+2018-11-08    78.85
+2018-11-09    77.80
+2018-11-12    78.00
+2018-11-13    77.10
+2018-11-14    77.35
+2018-11-15    77.60
+2018-11-16    76.95
+2018-11-19    76.70
+2018-11-20    76.00
+2018-11-21    76.00
+2018-11-22    75.60
+2018-11-23    75.35
+2018-11-26    76.15
+2018-11-27    76.05
+2018-11-28    76.90
+2018-11-29    77.05
+2018-11-30    76.75
+2018-12-03    78.80
+2018-12-04    78.25
+2018-12-05    76.65
+2018-12-06    75.10
+2018-12-07    75.45
+2018-12-10    74.45
+Name: 0050, dtype: float64
+<class 'pandas.core.series.Series'>
+2018-11-02 00:00:00
+78.65
+['2546']
+['2546']
+['2546']
+date
+2018-11-02    78.65
+2018-11-05    78.25
+2018-11-06    78.00
+2018-11-07    78.40
+2018-11-08    78.85
+2018-11-09    77.80
+2018-11-12    78.00
+2018-11-13    77.10
+2018-11-14    77.35
+2018-11-15    77.60
+2018-11-16    76.95
+2018-11-19    76.70
+2018-11-20    76.00
+2018-11-21    76.00
+2018-11-22    75.60
+2018-11-23    75.35
+2018-11-26    76.15
+2018-11-27    76.05
+2018-11-28    76.90
+2018-11-29    77.05
+2018-11-30    76.75
+2018-12-03    78.80
+2018-12-04    78.25
+2018-12-05    76.65
+2018-12-06    75.10
+2018-12-07    75.45
+2018-12-10    74.45
+Name: 0050, dtype: float64
+<class 'pandas.core.series.Series'>
+2018-11-02 00:00:00
+78.65
+['2546']
+stock_id
+2546    True
+dtype: bool
+date
+2018-11-02    78.65
+2018-11-05    78.25
+2018-11-06    78.00
+2018-11-07    78.40
+2018-11-08    78.85
+2018-11-09    77.80
+2018-11-12    78.00
+2018-11-13    77.10
+2018-11-14    77.35
+2018-11-15    77.60
+2018-11-16    76.95
+2018-11-19    76.70
+2018-11-20    76.00
+2018-11-21    76.00
+2018-11-22    75.60
+2018-11-23    75.35
+2018-11-26    76.15
+2018-11-27    76.05
+2018-11-28    76.90
+2018-11-29    77.05
+2018-11-30    76.75
+2018-12-03    78.80
+2018-12-04    78.25
+2018-12-05    76.65
+2018-12-06    75.10
+2018-12-07    75.45
+2018-12-10    74.45
+Name: 0050, dtype: float64
+<class 'pandas.core.series.Series'>
+2018-11-02 00:00:00
+78.65
+['2546']
+2018-11-01 - 2018-11-29 報酬率: 0.00 % nstock 0
+2018-11-29 - 2018-12-27 報酬率: 0.60 % nstock [07/Jan/2019 14:43:25] "POST /stocks/api HTTP/1.1" 200 1662
+[07/Jan/2019 14:43:25] "GET /static/icon/growth.ico HTTP/1.1" 200 4148
+[07/Jan/2019 14:43:27] "GET /stocks HTTP/1.1" 200 3133
+[07/Jan/2019 14:43:28] "GET /static/icon/growth.ico HTTP/1.1" 200 4148
+[07/Jan/2019 14:43:29] "GET /stocks HTTP/1.1" 200 3133
+[07/Jan/2019 14:43:30] "GET /static/icon/growth.ico HTTP/1.1" 200 4148
+[07/Jan/2019 14:48:13] "GET /stocks HTTP/1.1" 200 3133
+[07/Jan/2019 14:48:23] "POST /stocks/api HTTP/1.1" 200 1662
+[07/Jan/2019 14:56:08] "GET /stocks HTTP/1.1" 200 3133
+[07/Jan/2019 15:13:35] "GET /stocks HTTP/1.1" 200 3133
+[07/Jan/2019 15:13:35] "GET /static/css/stocks.css HTTP/1.1" 304 0
+[07/Jan/2019 15:13:37] "GET /static/icon/growth.ico HTTP/1.1" 200 4148
+[07/Jan/2019 15:23:00] "GET /stocks HTTP/1.1" 200 3133
+[07/Jan/2019 15:23:00] "GET /static/js/stock.js HTTP/1.1" 304 0
+[07/Jan/2019 15:23:02] "GET /static/icon/growth.ico HTTP/1.1" 200 4148
+[07/Jan/2019 15:23:09] "POST /stocks/api HTTP/1.1" 200 1662
+[07/Jan/2019 15:34:45] "GET /stocks HTTP/1.1" 200 3133
+[07/Jan/2019 15:34:46] "GET /static/js/stock.js HTTP/1.1" 304 0
+[07/Jan/2019 15:34:47] "GET /static/icon/growth.ico HTTP/1.1" 200 4148
+[07/Jan/2019 15:35:01] "POST /stocks/api HTTP/1.1" 200 1662
+[07/Jan/2019 15:40:06] "GET / HTTP/1.1" 404 74
+[07/Jan/2019 15:40:08] "GET /favicon.ico HTTP/1.1" 404 85
+[07/Jan/2019 15:40:20] "GET /stocks HTTP/1.1" 200 3133
+[07/Jan/2019 15:40:23] "GET /stockssd HTTP/1.1" 404 82
+[07/Jan/2019 15:40:26] "GET /stocks HTTP/1.1" 200 3133
+[07/Jan/2019 15:46:37] "GET /stocks HTTP/1.1" 200 3133
+[07/Jan/2019 15:46:38] "GET /static/icon/growth.ico HTTP/1.1" 200 4148
+[07/Jan/2019 16:00:11] "GET /stocks HTTP/1.1" 200 3133
+[07/Jan/2019 16:00:11] "GET /static/js/stock.js HTTP/1.1" 200 6372
+[07/Jan/2019 16:00:11] "GET /static/css/stocks.css HTTP/1.1" 200 2648
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/root/Stocks/stocks-django/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 153, in handle
+    self.handle_one_request()
+  File "/root/Stocks/stocks-django/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 161, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[07/Jan/2019 16:00:22] "POST /stocks/api HTTP/1.1" 200 1662
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 332, in send_headers
+    self.send_preamble()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 252, in send_preamble
+    self._write(('HTTP/%s %s\r\n' % (self.http_version,self.status)).encode('iso-8859-1'))
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[07/Jan/2019 16:00:22] "POST /stocks/api HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 332, in send_headers
+    self.send_preamble()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 252, in send_preamble
+    self._write(('HTTP/%s %s\r\n' % (self.http_version,self.status)).encode('iso-8859-1'))
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/root/Stocks/stocks-django/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 98, in handle_error
+    super().handle_error()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/root/Stocks/stocks-django/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 153, in handle
+    self.handle_one_request()
+  File "/root/Stocks/stocks-django/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 176, in handle_one_request
+    handler.run(self.server.get_app())
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/usr/lib/python3.5/wsgiref/simple_server.py", line 36, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+[07/Jan/2019 16:08:27] "GET /stocks HTTP/1.1" 200 3133
+[07/Jan/2019 16:08:30] "GET /static/icon/growth.ico HTTP/1.1" 200 4148
+[07/Jan/2019 16:33:04] "GET /stocks HTTP/1.1" 200 3133
+[07/Jan/2019 16:33:08] "GET /static/icon/growth.ico HTTP/1.1" 200 4148
+[07/Jan/2019 16:46:29] "GET / HTTP/1.1" 404 74
+[07/Jan/2019 16:48:38] "GET /stocks HTTP/1.1" 200 3133
+[07/Jan/2019 16:48:38] "GET /static/css/stocks.css HTTP/1.1" 200 2648
+[07/Jan/2019 16:48:39] "GET /static/js/stock.js HTTP/1.1" 200 6372
+[07/Jan/2019 16:48:47] "POST /stocks/api HTTP/1.1" 200 1662
