@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" />
+    <title>Stocks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="shortcut icon" href="/static/icon/growth.ico">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/stocks.css' %}" />
+</head>
+
+
+
+<div class="StocksBox" name="StocksBox" id="StocksBox">
+  <div class="title">Stocks
+    <div class="caption">選取設定參數，就能帶出策略的選股與回測</div>
+    <hr/>
+  </div>
+  <div class="parameters">參數設定
+    <div class="strategies">策略參數</div>
+    <div class="parametersbox">
+      <div class="inputbox">市值 =
+        <input type="number" name="MarkCap" id="MarkCap"/>
+      </div>
+      <div class="inputbox">自由現金流>
+        <input type="text" name="FCF" id="FCF"/>
+      </div>
+      <div class="inputbox">股東權益報酬率>
+        <input type="number" step="0.01" name="ROE" id="ROE"/>
+      </div>
+      <div class="inputbox">營業利益成長率>
+        <input type="number" step="0.01" name="OPM" id="OPM"/>
+      </div>
+      <div class="inputbox">市營收比<
+        <input type="text" step="0.01" name="PSR" id="PSR"/>
+      </div>
+      <div class="inputbox">RSV>
+        <input type="text" step="0.01" name="RSV" id="RSV"/>
+      </div>
+      <div class="inputbox">單股價錢<
+        <input type="text" name="price" id="price"/>
+      </div>
+    </div>
+    <div class="backtest"> 
+      <div class="backtestbox">回測參數</div>
+      <div class="parametersbox">
+        <div class="date">
+          <div class="inputbox">開始時間=
+            <input type="date" name="startD" id="startD"/>
+          </div>
+          <div class="inputbox">結束時間=
+            <input type="date" name="endD" id="endD"/>
+          </div>
+        </div>
+        <div class="inputbox">回測週期=
+          <input type="number" name="period" id="period"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="GO">
+    <button type="submit" name="GO" id="GO" onclick="GetData()">GO!</button>
+    <div class="resultbox">
+      <hr/>
+      <div class="LoadingBar" id="LoadingBar" name="LoadingBar">
+        <div class="progressbar" id="progressbar">
+          <div id="loading"></div>
+          <div id="load">Loading...</div>
+        </div>
+      </div>
+      <div class="result" name="result" id="result"></div>
+      <div class="results" name="results" id="results">
+        <div class="resulttext" name="resulttext" id="resulttext"></div>
+        <div class="resultmaxmin" name="resultmaxmin" id="resultmaxmin"></div>
+        <div class="selectionT" name="selectionT" id="selectionT"></div>
+        <div class="selection" name="selection" id="selection"></div>
+        <div class="figure" name="figure" id="figure"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="{% static 'js/stock.js' %}">
+      var csrftoken = '{{ csrf_token }}';
+</script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+</html>

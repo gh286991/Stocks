@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+    {% comment %} <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> {% endcomment %}
+    <script type="text/javascript" src="{% static 'js/API.js' %}">
+         var csrftoken = '{{ csrf_token }}';
+    </script>
+    
+</head>
+<body>
+    <h1>Stocks</h1>
+    <h2>Welcome</h2>
+    <h1>Stock</h1>
+    {% comment %} <form class="form-signin" method = "post" action="/add/api"> {% endcomment %}
+        <div class="inputbox"> 
+        <input type="number" id="A" name="A"/>
+        <h3>+</h3>
+        <input type="number" id="B" name="B"/>
+        </div>
+        <div class="result">
+        <h3 id="=">= </h3>
+        <h3 id="result", id = "result" name = "result"></h3>
+        <button class="btn btn-lg btn-primary btn-block" onclick="Postdata()">GO!</button>
+    {% comment %} </form> {% endcomment %}
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/stocks.css' %}">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript">
+      var List = {{ List|safe }} ;
+      var x = {{ x|safe }} ;
+      var y = {{ y|safe }} ;
+      var Tw50 = {{ Tw50|safe }} ;
+    </script>
+    <script type="text/javascript" src="{% static 'js/E_9_1.js' %}"></script>
+</head>
+<body>
+<div class="Total">
+  <H1>Stocks
+    <hr/>
+  </H1>
+  <form action="/stocks/post" method="post">
+    <div class="parameter">
+      <H2>參數設定
+        <h3>策略參數</h3>
+      </H2>
+      <div class="starges">
+        <div class="items">
+          <h3>市值 = </h3>
+        </div>
+        <div class="inputbox">
+        {% if values == novales  %}
+          <input type="text" name="values" value="1e10" />
+          <h3>沒值</h3>
+        {% else %}
+          <input name="values" value= "{{ values }}" />
+          {{ values }}
+        {% endif %}
+        </div>
+        <div class="items">
+          <h3>自由現金流　></h3>
+        </div>
+        <div class="inputbox">
+          {% if freecashflow == novales  %}
+            <input name="freecashflow" value="0"/>
+          {% else %}
+            <input name="freecashflow" value= "{{ freecashflow }}"/>
+          {% endif %}  
+        </div>
+        <div class="items">
+          <h3>股東權益報酬率 ></h3>
+        </div>
+        <div class="inputbox">
+          {% if shareholder == novales  %}
+            <input name="shareholder" value="0"/>
+          {% else %}  
+            <input name="shareholder" value= "{{ shareholder }}" />
+          {% endif %}  
+        </div>
+        <div class="items">
+          <h3>營業利益成長率　></h3>
+        </div>
+        <div class="inputbox">
+          {% if grows == novales  %}
+            <input name="grows" value= "0.5" />
+          {% else %}
+            <input name="grows" value= "{{ grows }}"/>
+          {% endif %}
+        </div>
+        <div class="items">
+          <h3>市值營收比　<</h3>
+        </div>
+        <div class="inputbox">
+          {% if Revenue == novales  %}
+            <input name="Revenue" value="5"/>
+          {% else %}
+            <input name="Revenue" value= "{{ Revenue }}" />
+          {% endif %}
+        </div>
+        <div class="items">
+          <h3>rsv　></h3>
+          <h3> rsv = {{ rsvs }} </h3>
+        </div>
+        <div class="inputbox">
+        {% if rsvs == novales  %}
+          <input name="rsvs" value="0.7"/>
+        {% else %}
+          <input name="rsvs" value= "{{ rsvs }}" />
+        {% endif %}
+        </div>
+        <div class="items">
+          <h3>單股價錢　<</h3>
+        </div>
+        <div class="inputbox">
+          {% if pricess == novales  %}
+            <input name="pricess" value="40"/>
+          {% else %}
+            <input name="pricess" value= "{{ pricess }}" />
+          {% endif %} 
+        </div>
+      </div>
+      <div class="back">
+        <h3>回測參數</h3>
+        <div class="items">
+          <h3>開始時間　=</h3>
+        </div>
+        <div class="inputbox">
+        {% if Sda == novales  %}
+          <input class="dates" name="startdate"  type="date" value="2018-11-01"  />
+        {% else %}
+          <input class="dates" name="startdate"  type="date" value= "{{Sda.0}}-{{Sda.1}}-{{Sda.2}}" />
+        {% endif %}
+        </div>
+        <div class="items">
+          <h3>結束時間　=</h3>
+        </div>
+        <div class="inputbox">
+        {% if ends == novales  %}
+          <input class="dates" name="enddate" type="date" value= "2018-12-10" />
+        {% else %}
+          <input class="dates" name="enddate" type="date" value= "{{ends.0}}-{{ends.1}}-{{ends.2}}" />
+        {% endif %}
+        </div>
+        <div class="items">
+          <h3>回測週期　=</h3>
+        </div>
+        <div class="inputbox">
+        {% if hold_days == novales  %}
+          <input class="Tperiod" name="Tperiod" value="28" />
+        {% else %}
+          <input class="Tperiod" name="Tperiod" value= "{{ hold_days }}" />
+        {% endif %}
+        </div>
+      </div>
+      {% csrf_token %}
+      <div class="butt">
+        <button type="submit" name="Submit">GO!!!</button>
+      </div>
+    </div>
+  
+  </form>
+  <div class="result">
+            <div class="ratereturn">
+                 <H2>結果</H2>
+            </div>
+
+            {% for x,y,z,w in ToHTML %}
+
+                <p>{{ x|date:"Y-m-d" }} --- {{ y|date:"Y-m-d" }} 報酬率: {{ z }} % ,nstock : {{ w }}</p>  
+
+            {% endfor %} 
+            
+            <h3>{{ Rmax }} {{ maxreturn }} {{pa}}</h3>  
+            <h3>{{ Rmin }} {{ minreturn }} {{pa}}</h3>  
+            <h3>{{ recoment }} </h3>
+            {% for g in STT %}
+                <h3>      {{ g }} </h3>  
+            {% endfor %} 
+
+            <div id="epf" style="width:55%;height:600px;"></div>
+            <h1>Test List </h1>
+            <h1> {{ Test }} </h1>
+
+    </div> 
+
+  
+</div> 
+ 
+  
+
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script type="text/javascript">
+    {% comment %} var List = {{ List|safe }} ;
+    var x = {{ x|safe }} ;
+    var y = {{ y|safe }} ; {% endcomment %}
+</script>
+<script type="text/javascript" src="{% static 'js/Test.js' %}"></script>
+
+</head>
+<body>
+<p>最簡單的線圖</p>
+<div id="epf" style="width:70%;height:700px;"></div>
+<h1>Test List </h1>
+<h1> {{ Test }} </h1>
+
+
+</body>
+</html>

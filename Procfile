@@ -1,0 +1,1 @@
+web: gunicorn opencook.wsgi —log-ﬁle -
