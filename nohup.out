@@ -446,3 +446,19 @@ ConnectionResetError: [Errno 104] Connection reset by peer
 [08/Jan/2019 03:29:56] " " 400 -
 [08/Jan/2019 03:30:16] code 400, message Bad request syntax ('\x05\x01\x00')
 [08/Jan/2019 03:30:16] " " 400 -
+[08/Jan/2019 03:30:36] code 400, message Bad request syntax ('\x05\x01\x00')
+[08/Jan/2019 03:30:36] " " 400 -
+[08/Jan/2019 03:30:56] code 400, message Bad request syntax ('\x04\x01\x00P\x00\x00\x00\x01\x00freeproxies.mooo.com\x00')
+[08/Jan/2019 03:30:56] " P    freeproxies.mooo.com " 400 -
+[08/Jan/2019 03:31:16] code 400, message Bad request syntax ('\x04\x01\x00P\x00\x00\x00\x01\x00webcam02.dynv6.net\x00')
+[08/Jan/2019 03:31:16] " P    webcam02.dynv6.net " 400 -
+[08/Jan/2019 03:31:36] code 400, message Bad request syntax ('\x04\x01\x00P\x00\x00\x00\x01\x00web1.strangled.net\x00')
+[08/Jan/2019 03:31:36] " P    web1.strangled.net " 400 -
+[08/Jan/2019 03:31:56] code 400, message Bad request syntax ('\x05\x01\x00')
+[08/Jan/2019 03:31:56] " " 400 -
+[08/Jan/2019 03:32:09] "GET /stocks HTTP/1.1" 200 3133
+[08/Jan/2019 03:32:16] code 400, message Bad request syntax ('\x05\x01\x00')
+[08/Jan/2019 03:32:16] " " 400 -
+[08/Jan/2019 03:32:36] code 400, message Bad request syntax ('\x05\x01\x00')
+[08/Jan/2019 03:32:36] " " 400 -
+[08/Jan/2019 03:37:32] "GET /stocks HTTP/1.1" 200 3133
