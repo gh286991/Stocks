@@ -462,3 +462,12 @@ ConnectionResetError: [Errno 104] Connection reset by peer
 [08/Jan/2019 03:32:36] code 400, message Bad request syntax ('\x05\x01\x00')
 [08/Jan/2019 03:32:36] " " 400 -
 [08/Jan/2019 03:37:32] "GET /stocks HTTP/1.1" 200 3133
+[08/Jan/2019 03:54:09] "GET /stocks HTTP/1.1" 200 3133
+[08/Jan/2019 03:54:09] "GET /static/js/stock.js HTTP/1.1" 200 6372
+[08/Jan/2019 03:54:09] "GET /static/css/stocks.css HTTP/1.1" 200 2648
+[08/Jan/2019 03:54:11] "GET /apple-touch-icon-120x120-precomposed.png HTTP/1.1" 404 114
+[08/Jan/2019 03:54:11] "GET /apple-touch-icon-120x120.png HTTP/1.1" 404 102
+[08/Jan/2019 03:54:11] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 106
+[08/Jan/2019 03:54:11] "GET /apple-touch-icon.png HTTP/1.1" 404 94
+[08/Jan/2019 03:54:11] "GET /static/icon/growth.ico HTTP/1.1" 304 0
+[08/Jan/2019 04:09:38] "GET /stocks HTTP/1.1" 200 3133
